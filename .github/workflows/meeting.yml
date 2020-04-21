@@ -6,6 +6,7 @@ jobs:
   meeting:
     runs-on: ubuntu-18.04
     steps:
+    - uses: actions/checkout@v2
     - uses: pkgjs/meet@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
