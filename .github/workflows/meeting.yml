@@ -1,0 +1,14 @@
+name: "Meeting"
+on:
+  issue_comment:
+    types: [created, edited]
+jobs:
+  meeting:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: pkgjs/meet@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        schedules: '2020-04-02T17:00:00.0Z/P28D'
+        issueTitle: 'bnb's Awesome Meeting <%= date.toFormat("yyyy-MM-dd") %>'
+        agendaLabel: 'bnb-agenda'
