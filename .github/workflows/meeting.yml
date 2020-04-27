@@ -10,7 +10,7 @@ jobs:
       with:
         # 0 indicates all history
         fetch-depth: 0
-    - uses: pkgjs/meet@0
+    - uses: pkgjs/meet@v0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         schedules: '2020-04-02T17:00:00.0Z/P28D,2020-04-16T13:00:00.0Z/P28D'
