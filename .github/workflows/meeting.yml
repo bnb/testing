@@ -1,14 +1,11 @@
 name: "Meeting"
-on:
-  issue_comment:
-    types: [created, edited]
+on: workflow_dispatch
 jobs:
   meeting:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
       with:
-        # 0 indicates all history
         fetch-depth: 0
     - uses: pkgjs/meet@v0
       with:
