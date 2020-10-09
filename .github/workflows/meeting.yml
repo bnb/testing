@@ -13,6 +13,4 @@ jobs:
     - uses: pkgjs/meet@v0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        schedules: '2020-04-02T17:00:00.0Z/P28D,2020-04-16T13:00:00.0Z/P28D'
-        issueTitle: 'bnb Team Meeting <%= date.toFormat("yyyy-MM-dd") %>'
-        agendaLabel: 'bnb-agenda'
+        schedules: 2020-10-09T18:15:11+0000/P1D
