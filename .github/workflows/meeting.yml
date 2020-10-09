@@ -11,3 +11,4 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         schedules: 2020-10-09T18:15:11+0000/P1D
+        issueTitle: 'bnb Team Meeting <%= date.toFormat("yyyy-MM-dd") %>'
